@@ -63,7 +63,7 @@ function App() {
             <Route path="toolkit" element={<Toolkit />}></Route>
           </Route>
           <Route path="/projectspage" element={<ProjectPage />} />
-          <Route path="/certificatepage" element={<CertificatePage />} />
+          <Route path="/certificateepage" element={<CertificatePage />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/blogs" element={<ComingSoon />} />
           <Route path="*" element={<Notfound />} />

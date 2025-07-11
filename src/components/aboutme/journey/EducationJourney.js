@@ -25,65 +25,70 @@ function EducationJourney() {
           Project Journey
         </Link>
       </div>
+
       <div className="mt-5">
         <Flip top cascade>
-          <h1>Qualification Journey</h1>
+          <h1>Qualification Journey – Metin Meki</h1>
         </Flip>
       </div>
+
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date="2004 - 2014"
+          date="2016 - 2021"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<SchoolIcon />}
         >
           <h4 className="vertical-timeline-element-title">
-            SECONDARY SCHOOL CERTIFICATE
+            Diploma DEGREE IN COMPUTER SCIENCE
           </h4>
           <h4 className="vertical-timeline-element-subtitle mt-2">
-            BOF High School, Gazipur
+            Da Vinci Private Institute, Computer Science Department
           </h4>
           <p>
-            Studied here from Class 1 to 10th as a part of secondary school
-            Certificate and gain GPA 5 in my SSC Examination.
+            Completed my secondary education, which laid the foundation for my passion in science and technology.
           </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date="2014 - 2018"
+          date="2021 - 2025"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<SchoolIcon />}
         >
           <h4 className="vertical-timeline-element-title">
-            DIPLOMA IN ENGINEERING
+            BACHELOR'S DEGREE IN COMPUTER SCIENCE
           </h4>
           <h4 className="vertical-timeline-element-subtitle mt-2">
-            Dhaka Polytechnic Institute, Dhaka
+            Nawroz University, Duhok
           </h4>
           <p>
-            Studied Diploma in Computer Technology from Dhaka Polytechnic
-            institute and gain CGPA 2.98.
+            Studied Computer Science with a strong academic foundation in software development, data structures, and AI.
+            Graduated with distinction.
           </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date="2019 - 2023"
+          date="2020 - Present"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<SchoolIcon />}
         >
-          <h4 className="vertical-timeline-element-title">GRADUATION</h4>
+          <h4 className="vertical-timeline-element-title">
+            SELF-STUDY & ADVANCED LEARNING
+          </h4>
           <h4 className="vertical-timeline-element-subtitle mt-2">
-            Sonargaon University, Dhaka
+            Online Platforms (SoloLearn,Udemy, Kaggle, Cisco Academy,Data Camp,HP Life)
           </h4>
           <p>
-            Studied Bachelor of Science degree in Computer Science and
-            Engineering field from Sonargaon University and gain CGPA 3.44.
+            Engaged in deep learning, machine learning, and web development through open courses and real-world projects.
+            Continuously expanding skills in AI, React, and TensorFlow.
           </p>
         </VerticalTimelineElement>
 

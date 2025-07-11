@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
-import ci from "../../images/onboarding.png";
-import hd from "../../images/hd.png";
-import pp from "../../images/portfolio.png";
+import nyc from "../../images/firedetection.jpeg";
+import ci from "../../images/e-commerce.png";
+import hd from "../../images/Diabetes.jpg";
+import pp from "../../images/handwrite digit.jpeg";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Certification from "../../components/certificatee/Certificate";
+
 import { HiArrowRight } from "react-icons/hi";
 
 export default function Projects() {
@@ -36,13 +38,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      New Year CountDown
+                      Fire Detection
                     </h5>
                     <img src={nyc} alt={nyc} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Web_Programming/tree/main/New-Year-Countdown"
+                          "https://github.com/metinmeki/Fire-Detection-AI"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -66,12 +68,7 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      The New Year Countdown Project is more than just a
-                      celebration; it's a testament to the human spirit and our
-                      shared aspirations for a brighter future. So, mark your
-                      calendars and get ready to be part of this global
-                      extravaganza as we count down to a new year filled with
-                      endless possibilities.
+                      Fire Detection AI is a real-time fire detection system leveraging the power of the YOLO (You Only Look Once) algorithm. It analyzes video streams or images to detect fire quickly and accurately, enabling timely alerts to help prevent fire-related disasters.
                     </p>
                   </h6>
                   <div
@@ -82,7 +79,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, JavaScript
+                    OpenCV, TensorFlow, NumPy
                   </div>
                 </div>
               </Fade>
@@ -99,13 +96,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Heart Disease Prediction
+                      Diabetes Prediction
                     </h5>
                     <img src={hd} alt={hd} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Machine_Learning/tree/main/Heart%20Disease%20Prediction"
+                          "https://www.kaggle.com/code/metinmekiabullrahman/diabetes-prediction-random-forest-accuracy0-75"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -161,13 +158,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Online Payroll Management System
+                      AA Online Shopping
                     </h5>
                     <img src={ci} alt={ci} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Online-Payroll-Management-System"
+                          "https://github.com/metinmeki/AA_Online_Shoping"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -191,11 +188,8 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      A Payroll management System with feature like generate
-                      payslip & reports. It manages salaries, leaves, branches,
-                      employees, designations, shifts, holidays and employee
-                      attendance. It has chat application so internal employees
-                      can use that feature.
+                     An Online Shopping System that allows users to browse products, add items to cart, and place secure orders. It supports user authentication, product search, order tracking, and inventory management. The platform also features an integrated chat support system for real-time customer assistance and inquiries.
+
                     </p>
                   </h6>
                   <div
@@ -206,7 +200,7 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    CSS, JavaScript, PHP, SCSS
+                    CSS, JavaScript,  SCSS
                   </div>
                 </div>
               </Fade>
@@ -223,13 +217,13 @@ export default function Projects() {
                 >
                   <div className="projectContent">
                     <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Personal Portfolio
+                       Handwritten Digit Recognition with Voice
                     </h5>
                     <img src={pp} alt={pp} />
                     <div className="project--showcaseBtn">
                       <a
                         href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Personal-Portfolio"
+                          "https://github.com/metinmeki/Handwritten-Digit-Recognition-With-Voice-"
                         }
                         target="_blank"
                         rel="noreferrer"
@@ -253,9 +247,8 @@ export default function Projects() {
                         fontWeight: 600,
                       }}
                     >
-                      Welcome to my personal portfolio. Explore my work, skills,
-                      and achievements in a concise and visually appealing
-                      format. Get a glimpse of my expertise and creativity.
+                     
+This project is a browser-based AI application that recognizes handwritten digits drawn on a canvas using a trained neural network with TensorFlow.js. It provides real-time voice feedback, progress bar visualization, and is fully responsive on desktop and mobile devices.
                     </p>
                   </h6>
                   <div
@@ -266,20 +259,19 @@ export default function Projects() {
                       fontWeight: 600,
                     }}
                   >
-                    HTML, CSS, SCSS, React, JavaScript
+                    HTML, CSS, TensorFlow,Python, JavaScript
                   </div>
                 </div>
               </Fade>
             </Col>
           </Row>
           <div className="blog--viewAll">
-            <Link to="/projectspage">
-              <button className="btn btn-primary">
-                View All
-                <HiArrowRight className="viewArr" />
-              </button>
-            </Link>
-          </div>
+                     <Link to="/projectspage">
+                       <button className="btn btn-primary">
+                         View All <HiArrowRight className="viewArr" />
+                       </button>
+                     </Link>
+                   </div>
         </Container>
       </Container>
     </div>

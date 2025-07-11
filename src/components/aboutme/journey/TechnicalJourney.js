@@ -51,7 +51,7 @@ function TechnicalJourney() {
           icon={<ComputerIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            C PROGRAMMING LANGUAGE
+            C#
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement

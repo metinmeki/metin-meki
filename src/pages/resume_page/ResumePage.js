@@ -1,16 +1,17 @@
-import { Container } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import React, { useState, useEffect } from "react";
+import { Container, Button } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
-import Particle from "../../Particle";
-import pdf from "../../assets/MD_MAFUJUL_HASAN.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import Particle from "../../Particle";
 import Zoom from "react-reveal/Zoom";
-import React, { useState, useEffect } from "react";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import Certification from "../../components/certificatee/Certificate";
 
-const resumeLink =
-  "https://raw.githubusercontent.com/MD-MAFUJUL-HASAN/Personal-Portfolio/main/src/assets/MD_MAFUJUL_HASAN.pdf";
+// 🟢 Import the local PDF file from src/assets
+import pdf from "../../assets/MetinMeki.pdf";
+
+// 🟢 Setup the PDF worker
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
   const [width, setWidth] = useState(1200);
@@ -34,23 +35,37 @@ function Resume() {
                 <h1 style={{ color: "rgb(134 61 176)" }}>RESUME</h1>
               </Zoom>
             </div>
-            <div fluid className="certificate-section" id="about">
+
+            <div className="certificate-section" id="about">
+              {/* 🟢 Download button (forces download) */}
               <div className="d-flex justify-content-center mt-4">
-                <Button variant="primary" href={pdf} target="_blank">
-                  <AiOutlineDownload />
-                  &nbsp;Download Resume
-                </Button>
+                <a href={pdf} download="MetinMeki_Resume.pdf">
+                  <Button variant="primary">
+                    <AiOutlineDownload />
+                    &nbsp;Download Resume
+                  </Button>
+                </a>
               </div>
-              <div className="resume d-flex justify-content-center">
-                <Document file={resumeLink}>
+
+              {/* 🟢 PDF Viewer */}
+              <div className="resume d-flex justify-content-center mt-3">
+                <Document
+                  file={pdf}
+                  onLoadError={(error) => console.error("Error loading PDF:", error)}
+                  onSourceError={(error) => console.error("Source error:", error)}
+                >
                   <Page pageNumber={1} scale={width > 786 ? 1.6 : 0.4} />
                 </Document>
               </div>
-              <div className="d-flex justify-content-center">
-                <Button variant="primary" href={pdf} target="_blank">
-                  <AiOutlineDownload />
-                  &nbsp;Download Resume
-                </Button>
+
+              {/* 🟢 Another download button at the bottom */}
+              <div className="d-flex justify-content-center mt-3">
+                <a href={pdf} download="MetinMeki_Resume.pdf">
+                  <Button variant="primary">
+                    <AiOutlineDownload />
+                    &nbsp;Download Resume
+                  </Button>
+                </a>
               </div>
             </div>
           </Container>

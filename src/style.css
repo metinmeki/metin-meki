@@ -2,22 +2,24 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(30, 30, 40, 0.9),
+    rgba(20, 15, 30, 0.95)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(35, 25, 50, 0.85),
+    rgba(15, 10, 25, 0.9)
   );
 
-  --imp-text-color: #1f0060;
+  --imp-text-color: #6c5ce7; /* softer yet vivid violet-blue */
 }
 
+/* Accent color: calm and attractive purple */
 .purple {
-  color: #b061df !important;
+  color: #a29bfe !important;
 }
+
 
 /* --------- */
 /*  Preloader */
@@ -30,7 +32,7 @@ html {
   height: 100%;
   z-index: 999999;
   background-color: #1f0060;
-  background-image: url(./images/pre.svg);
+  background-image: url(./images/network_intelligence.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -48,26 +50,28 @@ html {
 /*Scrollbar   */
 /* --------- */
 
+/* Scrollbar width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
-/* Track */
+/* Track background */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #1e1333; /* Slightly darker, richer purple */
 }
 
-/* Handle */
+/* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
-  border-radius: 12px;
+  background: rgba(164, 108, 224, 0.9); /* Elegant soft purple */
+  border-radius: 10px;
 }
 
-/* Handle on hover */
+/* Thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
-  border-radius: 12px;
+  background: rgba(199, 128, 255, 0.95); /* Brighter lavender for interaction */
+  border-radius: 10px;
 }
+
 
 /* --------- */
 /* Navbar Section  */
@@ -76,6 +80,7 @@ html {
   background-color: #212038d8 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
   backdrop-filter: blur(15px) !important;
 }
 

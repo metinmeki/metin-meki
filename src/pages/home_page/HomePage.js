@@ -5,9 +5,13 @@ import Typing from "./Typing";
 import Tilt from "react-parallax-tilt";
 import AboutmeContainer from "../../components/aboutme/aboutmeContainer";
 import Fade from "react-reveal/Fade";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillYoutube,
+} from "react-icons/ai";
 import { FaLinkedinIn, FaFacebookF, FaGoogle } from "react-icons/fa";
-import Certification from "../../components/certificate/Certification";
+import Certification from "../../components/certificatee/Certificate";
 import Projects from "../../components/projects/Projects";
 import Contactus from "../../components/contactus/Contactus";
 
@@ -30,38 +34,39 @@ export default function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> MD MAFUJUL HASAN</strong>
+                I'M 
+                <strong className="main-name"> Metin Meki</strong>
               </h1>
 
               <div className="typing-homeclass">
                 <Typing />
               </div>
+
               <div className="sociallink-home">
                 <ul className="homeaboutsociallinks">
                   <li className="socialicons">
                     <a
-                      href="https://github.com/MD-MAFUJUL-HASAN"
+                      href="https://github.com/metinmeki"
                       target="_blank"
                       rel="noreferrer"
-                      className="iconcolour  homesocialicons"
+                      className="iconcolour homesocialicons"
                     >
                       <AiFillGithub />
                     </a>
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.linkedin.com/in/md-mafujul-hasan/"
+                      href="https://www.linkedin.com/in/metin-amedi-2b6b74326/"
                       target="_blank"
                       rel="noreferrer"
-                      className="iconcolour  homesocialicons"
+                      className="iconcolour homesocialicons"
                     >
                       <FaLinkedinIn />
                     </a>
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.instagram.com/_md_mafujul_hasan_/"
+                      href="https://www.instagram.com/metin_amedi?igsh=N3lncThuaGN4MjB3&utm_source=qr"
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour homesocialicons"
@@ -71,17 +76,17 @@ export default function Home() {
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.facebook.com/mh.tonmoy.13"
+                      href="https://www.youtube.com/@metinmeki"
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour homesocialicons"
                     >
-                      <FaFacebookF />
+                      <AiFillYoutube />
                     </a>
                   </li>
                   <li className="socialicons">
                     <a
-                      href="mailto:mdtonmoy13.mt@gmail.com/"
+                      href="mailto:metinmeki99@gmail.com"
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour homesocialicons"
@@ -92,6 +97,7 @@ export default function Home() {
                 </ul>
               </div>
             </Col>
+
             <Col md={4} style={{ paddingBottom: 20 }}>
               <div className="img-home-main">
                 <Tilt>
@@ -108,6 +114,7 @@ export default function Home() {
           </Row>
         </Container>
       </Container>
+
       <AboutmeContainer />
       <Certification />
       <Projects />
